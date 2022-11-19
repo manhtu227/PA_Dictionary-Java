@@ -60,4 +60,23 @@ public class Data {
             e.printStackTrace();
         }
     }
+    public ArrayList<String> readFileHistory(String path){
+        FileReader fr = null;
+        BufferedReader Br = null;
+        ArrayList<String> history = new ArrayList<>();
+        try {
+            fr = new FileReader(path);
+            Br = new BufferedReader(fr);
+            String line = Br.readLine();
+            String[] list = line.split(",");
+            for(String i:list){
+                history.add(i);
+            }
+            return history;
+        }catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+
+    }
 }
