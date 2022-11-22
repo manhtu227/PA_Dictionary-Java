@@ -1,5 +1,8 @@
 package model;
 
+import views.jframe;
+
+import javax.swing.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -23,7 +26,7 @@ public class SlangWords {
         this.distionary = distionary;
     }
 
-    public void addSlangWord(String key, String Meaning) {
+    public void addSlangWord(String key, String Meaning, jframe jframe) {
         String[] values;
         List<String> listValues = new ArrayList<>();
         if (Meaning.contains(",")) {
@@ -35,19 +38,19 @@ public class SlangWords {
             listValues.add(Meaning);
         }
         if (this.distionary.containsKey(key)) {
-            if (this.distionary.get(key).contains(Meaning)) {
-                System.out.println("1.overwrite");
-                System.out.println("2.duplicate");
-                int choose = 1;
-                if (choose == 1) {
-                    this.distionary.replace(key, listValues);
-                } else {
-                    this.distionary.get(key).add(Meaning);
-                }
-            }
+
+            jframe.chuyenSelect(key, listValues);
+
         } else {
             this.distionary.put(key, listValues);
             this.AddSlangWordList.add(key);
+            JFrame jf = new JFrame();
+            JOptionPane.showMessageDialog(jf,
+                    "Add Slang success",
+                    "SUCCESS",
+                    JOptionPane.INFORMATION_MESSAGE);
+            jframe.chuyenMenu();
+
         }
     }
 
@@ -96,8 +99,9 @@ public class SlangWords {
     public boolean checkKey(String key, String meaning) {
         for (HashMap.Entry<String, List<String>> value1 : this.distionary.entrySet()){
             if (value1.getValue().contains(meaning)) {
-               if(value1.getKey().toString().compareTo(key)==0)
-                   return true;
+                if (value1.getKey().toString().compareTo(key) == 0) {
+                    return true;
+                }
             }
         }
         return false;

@@ -16,11 +16,13 @@ import static views.Menu.setColor;
 public class SearchSlangView extends JPanel {
     JTextField ques;
     DefaultTableModel tableModel;
-    public SearchSlangView(String[][] data,jframe jframe,int check) {
+    public SearchSlangView(String[][] data,jframe jframe,String search) {
         setLayout(new BorderLayout());
-        setPreferredSize(new Dimension(500, 250));
+        setPreferredSize(new Dimension(400, 400));
+        setLocation(200,200);
+//        setLocation(null);
         JPanel topPanel = new JPanel();
-        JLabel name = new JLabel("Search Slang:");
+        JLabel name = new JLabel(search);
 
         this.ques = new JTextField();
         this.ques.setColumns(10);
@@ -50,7 +52,7 @@ public class SearchSlangView extends JPanel {
                 return false;
             };
         };
-        SearchListener sL = new SearchListener(ques,jframe,check,tableModel);
+        SearchListener sL = new SearchListener(ques,jframe,search,tableModel);
         ques.addKeyListener(sL);
         table.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
         JScrollPane scrollPane = new JScrollPane(table);
@@ -60,7 +62,7 @@ public class SearchSlangView extends JPanel {
 
         TableColumn column = null;
         column = table.getColumnModel().getColumn(0);
-        column.setPreferredWidth(300);
+        column.setPreferredWidth(200);
         column = table.getColumnModel().getColumn(1);
         column.setPreferredWidth(200);
 
@@ -72,9 +74,19 @@ public class SearchSlangView extends JPanel {
 //        JButton back = new JButton();
         JButton jb3 = new JButton("Back");
 
-        jb3.addActionListener(jframe.getAc());
-        setColor(jb3);
-        add(jb3,BorderLayout.PAGE_END);
+
+
+        JButton back = new JButton("Menu");
+        back.addActionListener(jframe.getAc());
+        setColor(back);
+        JPanel bottompanel = new JPanel();
+        bottompanel.setLayout(new FlowLayout());
+        bottompanel.add(back);
+        JPanel bottompanel2=new JPanel();
+        bottompanel2.setLayout(new BoxLayout(bottompanel2,BoxLayout.PAGE_AXIS));
+        bottompanel2.add(Box.createRigidArea(new Dimension(0,5)));
+        bottompanel2.add(bottompanel);
+        add(bottompanel2,BorderLayout.PAGE_END);
     }
 
 

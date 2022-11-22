@@ -13,13 +13,13 @@ import java.util.List;
 public class SearchListener implements KeyListener {
     private JTextField text;
     private jframe mn;
-    private int check;
+    private String search;
     private DefaultTableModel tableModel;
 
-    public SearchListener(JTextField text, jframe mn, int check, DefaultTableModel table) {
+    public SearchListener(JTextField text, jframe mn, String search, DefaultTableModel table) {
         this.mn = mn;
         this.text = text;
-        this.check = check;
+        this.search = search;
         this.tableModel = table;
     }
 
@@ -44,11 +44,10 @@ public class SearchListener implements KeyListener {
                     }
                 }
                 String d = text.getText();
-                if (check == 0) {
+                if (search.compareTo("Search Slang")==0) {
                     Search s = new Search();
                     String value = s.getValueFromKey(d, mn.getSl());
                     if (value != null) {
-
                         String[] data = {d, value};
                         tableModel.insertRow(0, data);
 //                        table.addColumn(data);
@@ -58,7 +57,7 @@ public class SearchListener implements KeyListener {
                     Search s = new Search();
                     List<String> key = s.getKeyFromValue(d, mn.getSl());
                     for(String i:key){
-                        String value = s.getValueFromKey(i, mn.getSl());
+                        String value = String.join(", ",mn.getSl().getDistionary().get(i));;
                         if (key != null) {
                             String[] data = {i, value};
                             tableModel.insertRow(0, data);

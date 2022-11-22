@@ -27,6 +27,7 @@ public class Main {
         mn.getFrame().setContentPane(m);
         mn.getFrame().pack();
         mn.getFrame().setVisible(true);
+        System.out.println("hello");
     }
 
 

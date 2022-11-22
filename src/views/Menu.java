@@ -8,36 +8,29 @@ import java.awt.*;
 import java.awt.event.ActionListener;
 
 public class Menu extends JPanel {
-//    private JFrame frame;
-//    public Menu(){
-//        JFrame.setDefaultLookAndFeelDecorated((true));
-//        this.frame = new JFrame("Slang Words");
-//        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-//    }
-
-//    public JFrame getFrame() {
-//        return frame;
-//    }
 
     public Menu(ActionListener ac) {
+        JPanel center =new JPanel();
+
         JPanel panel = new JPanel();
         BoxLayout boxlayout = new BoxLayout(panel, BoxLayout.Y_AXIS);
         panel.setLayout(new GridLayout(8, 1));
         // Tạo Border cho panel
         panel.setBorder(new EmptyBorder(new Insets(0, 100, 0, 0)));
 //        ActionListener ac = new MenuListener(this);
-
         // Tạo các Button
-        JLabel name = new JLabel("MENU");
+        JLabel name = new JLabel("MENU",JLabel.CENTER);
+        name.setFont(new Font("Verdana", Font.PLAIN, 18));
+
         JButton jb1 = new JButton("Show List Slang Word");
         setColor(jb1);
         JButton jb2 = new JButton("Search Slang");
         setColor(jb2);
         JButton jb3 = new JButton("Search Dectination");
         setColor(jb3);
-        JButton jb4 = new JButton("Delete");
+        JButton jb4 = new JButton("Add Slang Word");
         setColor(jb4);
-        JButton jb5 = new JButton("Reset");
+        JButton jb5 = new JButton("History");
         setColor(jb5);
         JButton jb6 = new JButton("game");
         setColor(jb6);
@@ -53,10 +46,9 @@ public class Menu extends JPanel {
         jb7.addActionListener(ac);
         // Thêm Button vào Panel
         panel.add(name);
-        panel.add(Box.createRigidArea(new Dimension(0, 10)));
-
+        panel.add(Box.createRigidArea(new Dimension(0, 50)));
         panel.add(jb1);
-        panel.add(Box.createRigidArea(new Dimension(0, 10)));
+        panel.add(Box.createRigidArea(new Dimension(0, 20)));
         panel.add(jb2);
         panel.add(Box.createRigidArea(new Dimension(0, 10)));
         panel.add(jb3);

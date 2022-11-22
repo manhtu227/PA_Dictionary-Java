@@ -52,12 +52,14 @@ public class Data {
             e.printStackTrace();
         }
     }
-    public void exportData(String path, String key) throws IOException {
+    public void exportData(String path, String key,List<String> values) throws IOException {
         try {
             File file = new File(path);
             FileWriter fw = new FileWriter(file, true);
             BufferedWriter bw = new BufferedWriter(fw);
-            bw.write(key+",");
+            String value =String.join("| ",values);
+            bw.newLine();
+            bw.write(key+"`"+value);
             bw.close();
             fw.close();
             System.out.println("----exportData successfully----");
