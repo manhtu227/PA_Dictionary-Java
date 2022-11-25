@@ -2,19 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="051d9d18-5a60-41fb-9234-265f51950947" name="Changes" comment="Design layout according to MVC pattern&#10;Done 2 function search on interface">
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/action.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loginUI.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/SelectionListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/history.txt" beforeDir="false" afterPath="$PROJECT_DIR$/history.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/slang.txt" beforeDir="false" afterPath="$PROJECT_DIR$/slang.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/MenuListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/MenuListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/SearchListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/SearchListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Data.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Search.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Search.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/SlangWords.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/SlangWords.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/ListView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/ListView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/SearchSlangView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/SearchSlangView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/jframe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/jframe.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,15 +37,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/PA_Dictionary",
+    "nodejs_package_manager_path": "npm"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="controller" />
@@ -77,7 +76,14 @@
       <option name="presentableId" value="Default" />
       <updated>1668939315660</updated>
       <workItem from="1668939315660" duration="26364000" />
-      <workItem from="1669080816514" duration="18848000" />
+      <workItem from="1669080816514" duration="19793000" />
+      <workItem from="1669188451109" duration="1472000" />
+      <workItem from="1669192405541" duration="19000" />
+      <workItem from="1669196930013" duration="41000" />
+      <workItem from="1669211921943" duration="16000" />
+      <workItem from="1669212121106" duration="56000" />
+      <workItem from="1669257323414" duration="204000" />
+      <workItem from="1669304591087" duration="9499000" />
     </task>
     <task id="LOCAL-00001" summary="Design layout according to MVC pattern&#10;Done 2 function search on interface">
       <created>1668987528886</created>
@@ -139,6 +145,16 @@
           <url>file://$PROJECT_DIR$/src/controller/MenuListener.java</url>
           <line>21</line>
           <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/views/jframe.java</url>
+          <line>112</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/views/jframe.java</url>
+          <line>105</line>
+          <option name="timeStamp" value="36" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.NullPointerException" package="java.lang" />

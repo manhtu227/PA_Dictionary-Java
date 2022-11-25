@@ -55,14 +55,14 @@ public class SearchListener implements KeyListener {
                     }
                 } else {
                     Search s = new Search();
-                    List<String> key = s.getKeyFromValue(d, mn.getSl());
-                    for(String i:key){
-                        String value = String.join(", ",mn.getSl().getDistionary().get(i));;
-                        if (key != null) {
-                            String[] data = {i, value};
-                            tableModel.insertRow(0, data);
-                        }
-                    }
+                     s.getKeyFromValue(d, mn.getSl(),tableModel);
+//                    for(String i:key){
+//                        String value = String.join(", ",mn.getSl().getDistionary().get(i));;
+//                        if (key != null) {
+//                            String[] data = {i, value};
+//                            tableModel.insertRow(0, data);
+//                        }
+//                    }
 
 
                 }
