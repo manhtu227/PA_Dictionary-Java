@@ -1,22 +1,21 @@
 package controller;
 
 import model.Search;
-import views.jframe;
+import views.Jframe;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.io.IOException;
-import java.util.List;
 
 public class SearchListener implements KeyListener {
     private JTextField text;
-    private jframe mn;
+    private Jframe mn;
     private String search;
     private DefaultTableModel tableModel;
 
-    public SearchListener(JTextField text, jframe mn, String search, DefaultTableModel table) {
+    public SearchListener(JTextField text, Jframe mn, String search, DefaultTableModel table) {
         this.mn = mn;
         this.text = text;
         this.search = search;

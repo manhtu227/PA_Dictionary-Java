@@ -4,12 +4,11 @@ import controller.MenuListener;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionListener;
 
 public class AddView extends JPanel{
     JTextField Slang;
     JTextField Meaning;
-    public AddView(jframe jframe){
+    public AddView(Jframe jframe){
         setLayout(new BorderLayout());
         JPanel panel = new JPanel();
         JPanel toppanel = new JPanel();

@@ -8,11 +8,13 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
 public class SelectionListener implements MouseListener {
-    private DefaultTableModel tableModel;
     private JTable table;
-    public SelectionListener(DefaultTableModel table,JTable t){
-        this.tableModel=table;
+    private JTextField keyText;
+    private JTextField MeaningText;
+    public SelectionListener(JTable t, JTextField keyText,JTextField MeaningText){
         this.table= t;
+        this.keyText=keyText;
+        this.MeaningText=MeaningText;
     }
 //    @Override
 //    public void valueChanged(ListSelectionEvent e) {
@@ -28,6 +30,9 @@ public class SelectionListener implements MouseListener {
     @Override
     public void mouseClicked(MouseEvent e) {
         System.out.println(table.getSelectedRow());
+        DefaultTableModel tableModel = (DefaultTableModel) table.getModel();
+        this.keyText.setText(tableModel.getValueAt(table.getSelectedRow(),0).toString());
+        this.MeaningText.setText(tableModel.getValueAt(table.getSelectedRow(),1).toString());
 
     }
 

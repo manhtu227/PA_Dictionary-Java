@@ -1,14 +1,11 @@
 package views;
 
 import controller.SearchListener;
-import model.SlangWords;
 
 import javax.swing.*;
-import javax.swing.border.EmptyBorder;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableColumn;
 import java.awt.*;
-import java.awt.event.ActionListener;
 
 import static views.Menu.setColor;
 
@@ -16,7 +13,7 @@ import static views.Menu.setColor;
 public class SearchSlangView extends JPanel {
     JTextField ques;
     DefaultTableModel tableModel;
-    public SearchSlangView(String[][] data,jframe jframe,String search) {
+    public SearchSlangView(String[][] data, Jframe jframe, String search) {
         setLayout(new BorderLayout());
         setPreferredSize(new Dimension(400, 400));
         setLocation(200,200);

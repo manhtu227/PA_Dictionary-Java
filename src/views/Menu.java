@@ -14,7 +14,7 @@ public class Menu extends JPanel {
 
         JPanel panel = new JPanel();
         BoxLayout boxlayout = new BoxLayout(panel, BoxLayout.Y_AXIS);
-        panel.setLayout(new GridLayout(8, 1));
+        panel.setLayout(new GridLayout(10, 1));
         // Tạo Border cho panel
         panel.setBorder(new EmptyBorder(new Insets(0, 100, 0, 0)));
 //        ActionListener ac = new MenuListener(this);
@@ -32,10 +32,14 @@ public class Menu extends JPanel {
         setColor(jb4);
         JButton jb5 = new JButton("History");
         setColor(jb5);
-        JButton jb6 = new JButton("game");
+        JButton jb6 = new JButton("Update And Delete");
         setColor(jb6);
-        JButton jb7 = new JButton("Button 7");
+        JButton jb7 = new JButton("Random");
         setColor(jb7);
+        JButton jb8 = new JButton("PlayGame Random SlangWord");
+        setColor(jb8);
+        JButton jb9 = new JButton("PlayGame Random Definition");
+        setColor(jb9);
 
         jb1.addActionListener(ac);
         jb2.addActionListener(ac);
@@ -44,6 +48,8 @@ public class Menu extends JPanel {
         jb5.addActionListener(ac);
         jb6.addActionListener(ac);
         jb7.addActionListener(ac);
+        jb8.addActionListener(ac);
+        jb9.addActionListener(ac);
         // Thêm Button vào Panel
         panel.add(name);
         panel.add(Box.createRigidArea(new Dimension(0, 50)));
@@ -60,6 +66,10 @@ public class Menu extends JPanel {
         panel.add(jb6);
         panel.add(Box.createRigidArea(new Dimension(0, 10)));
         panel.add(jb7);
+        panel.add(Box.createRigidArea(new Dimension(0, 10)));
+        panel.add(jb8);
+        panel.add(Box.createRigidArea(new Dimension(0, 10)));
+        panel.add(jb9);
         add(panel);
     }
 

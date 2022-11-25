@@ -6,8 +6,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.util.List;
 
-public class selectView extends JPanel {
-    public selectView(jframe jframe,String key, List<String> Values){
+public class SelectView extends JPanel {
+    public SelectView(Jframe jframe, String key, List<String> Values){
         JPanel bottompannel = new JPanel();
         MenuListener ac = new MenuListener(jframe,key,Values);
         bottompannel.setLayout(new BoxLayout(bottompannel,BoxLayout.LINE_AXIS));

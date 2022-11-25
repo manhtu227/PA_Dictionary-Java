@@ -1,18 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="051d9d18-5a60-41fb-9234-265f51950947" name="Changes" comment="Design layout according to MVC pattern&#10;Done 2 function search on interface">
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/action.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/loginUI.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/SelectionListener.java" afterDir="false" />
+    <list default="true" id="051d9d18-5a60-41fb-9234-265f51950947" name="Changes" comment="Fix find Definition">
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/history.txt" beforeDir="false" afterPath="$PROJECT_DIR$/history.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/slang.txt" beforeDir="false" afterPath="$PROJECT_DIR$/slang.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/MenuListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/MenuListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/SearchListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/SearchListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Search.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Search.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/SelectionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/SelectionListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/SlangWords.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/SlangWords.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/AddView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/AddView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/ListView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/ListView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/SearchSlangView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/SearchSlangView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/jframe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Jframe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/selectView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/SelectView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +87,7 @@
       <workItem from="1669211921943" duration="16000" />
       <workItem from="1669212121106" duration="56000" />
       <workItem from="1669257323414" duration="204000" />
-      <workItem from="1669304591087" duration="9499000" />
+      <workItem from="1669304591087" duration="20423000" />
     </task>
     <task id="LOCAL-00001" summary="Design layout according to MVC pattern&#10;Done 2 function search on interface">
       <created>1668987528886</created>
@@ -92,7 +96,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668987528886</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Fix find Definition">
+      <created>1669364360440</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669364360440</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,49 +122,50 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Design layout according to MVC pattern&#10;Done 2 function search on interface" />
-    <option name="LAST_COMMIT_MESSAGE" value="Design layout according to MVC pattern&#10;Done 2 function search on interface" />
+    <MESSAGE value="Fix find Definition" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix find Definition" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/Main.java</url>
-          <line>11</line>
+          <line>9</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/views/Menu.java</url>
-          <line>82</line>
+          <line>92</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/controller/SearchListener.java</url>
-          <line>45</line>
+          <line>44</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/controller/SearchListener.java</url>
-          <line>56</line>
+          <line>55</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/controller/MenuListener.java</url>
-          <line>16</line>
+          <line>17</line>
           <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/controller/MenuListener.java</url>
-          <line>21</line>
+          <line>24</line>
           <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/views/jframe.java</url>
-          <line>112</line>
+          <url>file://$PROJECT_DIR$/src/views/Jframe.java</url>
+          <line>146</line>
           <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/views/jframe.java</url>
-          <line>105</line>
+          <url>file://$PROJECT_DIR$/src/views/Jframe.java</url>
+          <line>113</line>
           <option name="timeStamp" value="36" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">

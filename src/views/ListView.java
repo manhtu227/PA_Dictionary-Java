@@ -48,11 +48,12 @@ public class ListView extends JPanel {
 
         String[][] data = {{"", ""}};
         DefaultTableModel tableModel = new DefaultTableModel(data, columnNames);
-        JTable table = new JTable(tableModel) ;
-        SelectionListener sel = new SelectionListener(tableModel,table);
-        table.addMouseListener(sel);
-//        table.getSelectionModel().addListSelectionListener(sel);
-//        tableModel.removeRow(0);
+        JTable table = new JTable(tableModel){
+            private static final long serialVersionUID = 1L;
+            public boolean isCellEditable(int row, int column) {
+                return false;
+            };
+        }; ;
         for (HashMap.Entry<String, List<String>> value1 : sl.getDistionary().entrySet()){
             String[] data1 = {value1.getKey(), String.join(", ", value1.getValue())};
             tableModel.insertRow(table.getRowCount(), data1);

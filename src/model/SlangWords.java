@@ -1,6 +1,6 @@
 package model;
 
-import views.jframe;
+import views.Jframe;
 
 import javax.swing.*;
 import java.util.ArrayList;
@@ -26,7 +26,7 @@ public class SlangWords {
         this.distionary = distionary;
     }
 
-    public void addSlangWord(String key, String Meaning, jframe jframe) {
+    public void addSlangWord(String key, String Meaning, Jframe jframe) {
         String[] values;
         List<String> listValues = new ArrayList<>();
         if (Meaning.contains(",")) {
@@ -82,8 +82,6 @@ public class SlangWords {
     public String randomSlangWord() {
         Random rn = new Random();
 
-        // nextInt is normally exclusive of the top value,
-        // so add 1 to make it inclusive
         int randomNum = rn.nextInt((distionary.size() + 1) + 0);
         String key = (String) distionary.keySet().toArray()[randomNum];
         return key;

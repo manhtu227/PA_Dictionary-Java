@@ -2,9 +2,7 @@ package test;
 
 import model.*;
 import views.Menu;
-import views.jframe;
-
-import java.io.IOException;
+import views.Jframe;
 
 
 public class Main {
@@ -19,7 +17,7 @@ public class Main {
 //    }
 
     public static void main(String[] args) {
-        jframe mn=new jframe();
+        Jframe mn=new Jframe();
         Data file = new Data();
         file.readFile("Slang.txt",mn.getSl());
         Menu m=new Menu(mn.ac);
