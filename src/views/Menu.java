@@ -11,7 +11,7 @@ public class Menu extends JPanel {
 
     public Menu(ActionListener ac) {
         JPanel center =new JPanel();
-
+        center.setLayout(new FlowLayout());
         JPanel panel = new JPanel();
         BoxLayout boxlayout = new BoxLayout(panel, BoxLayout.Y_AXIS);
         panel.setLayout(new GridLayout(10, 1));
@@ -70,7 +70,8 @@ public class Menu extends JPanel {
         panel.add(jb8);
         panel.add(Box.createRigidArea(new Dimension(0, 10)));
         panel.add(jb9);
-        add(panel);
+        center.add(panel);
+        add(center);
     }
 
     public static void setColor(JButton b) {

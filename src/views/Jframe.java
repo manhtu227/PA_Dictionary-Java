@@ -120,6 +120,16 @@ public class Jframe {
         frame.setVisible(true);
     }
 
+    public void chuyenRandom() {
+        frame.setTitle("Random");
+        randomView mn = new randomView(this);
+        mn.setOpaque((true));
+        frame.setContentPane(mn);
+        frame.pack();
+        frame.setLocationRelativeTo(null);
+
+        frame.setVisible(true);
+    }
 
     public void chuyenUpdateAndDelete() {
         frame.setTitle("Update and Delete");
