@@ -79,7 +79,12 @@ public class MenuListener implements ActionListener {
         if (e.getActionCommand().toString().compareTo("Random") == 0) {
             this.mn.chuyenRandom();
         }
-
+        if (e.getActionCommand().toString().compareTo("PlayGame Random SlangWord") == 0) {
+            this.mn.chuyenGameSlang();
+        }
+        if (e.getActionCommand().toString().compareTo("PlayGame Random Definition") == 0) {
+            this.mn.chuyenGameDef();
+        }
         if (e.getActionCommand().toString().compareTo("random") == 0) {
             String key = mn.getSl().randomSlangWord();
             String mean = String.join(",",mn.getSl().getDistionary().get(key));

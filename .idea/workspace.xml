@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="051d9d18-5a60-41fb-9234-265f51950947" name="Changes" comment="done interface and function Update and Delete">
+    <list default="true" id="051d9d18-5a60-41fb-9234-265f51950947" name="Changes" comment="Fix update and Delete">
       <change afterPath="$PROJECT_DIR$/src/controller/GameListener.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/views/PlaygameView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/randomView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/history.txt" beforeDir="false" afterPath="$PROJECT_DIR$/history.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/MenuListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/MenuListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Jframe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Jframe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,16 +32,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/PA_Dictionary",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/PA_Dictionary&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="controller" />
@@ -81,6 +79,8 @@
       <workItem from="1669212121106" duration="56000" />
       <workItem from="1669257323414" duration="204000" />
       <workItem from="1669304591087" duration="22134000" />
+      <workItem from="1669450052472" duration="918000" />
+      <workItem from="1669517814991" duration="780000" />
     </task>
     <task id="LOCAL-00001" summary="Design layout according to MVC pattern&#10;Done 2 function search on interface">
       <created>1668987528886</created>
@@ -103,7 +103,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669375611281</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="done random Slang Word">
+      <created>1669450309728</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1669450309728</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Fix update and Delete">
+      <created>1669517940079</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1669517940079</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,7 +138,9 @@
     <MESSAGE value="Design layout according to MVC pattern&#10;Done 2 function search on interface" />
     <MESSAGE value="Fix find Definition" />
     <MESSAGE value="done interface and function Update and Delete" />
-    <option name="LAST_COMMIT_MESSAGE" value="done interface and function Update and Delete" />
+    <MESSAGE value="done random Slang Word" />
+    <MESSAGE value="Fix update and Delete" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix update and Delete" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

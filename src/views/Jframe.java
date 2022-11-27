@@ -151,7 +151,44 @@ public class Jframe {
         frame.setVisible(true);
     }
 
+    public void chuyenGameSlang() {
+        frame.setTitle("Random Slang");
+        String key = sl.randomSlangWord();
+        String[] answer = new String[4];
+        int randomNum = (int) (Math.random() * 4);
+        answer[randomNum] = sl.getDistionary().get(key).get(0);
+        for (int i = 0; i < 4; i++){
+            if (i != randomNum) {
+                answer[i] = sl.getDistionary().get(sl.randomSlangWord()).get(0);
+            }
+        }
+        PlaygameView mn = new PlaygameView(this, key, answer,"Slang");
+        mn.setOpaque((true));
+        frame.setContentPane(mn);
+        frame.pack();
+        frame.setLocationRelativeTo(null);
+        frame.setVisible(true);
+    }
 
+    public void chuyenGameDef() {
+        frame.setTitle("Radom Definition");
+        String key1 = sl.randomSlangWord();
+        String value= sl.getDistionary().get(key1).get(0);
+        String[] key = new String[4];
+        int randomNum = (int) (Math.random() * 4);
+        key[randomNum] = key1;
+        for (int i = 0; i < 4; i++){
+            if (i != randomNum) {
+                key[i] = sl.randomSlangWord();
+            }
+        }
+        PlaygameView mn = new PlaygameView(this, value, key,"def");
+        mn.setOpaque((true));
+        frame.setContentPane(mn);
+        frame.pack();
+        frame.setLocationRelativeTo(null);
+        frame.setVisible(true);
+    }
 
     public void chuyen() {
         frame.setTitle("List Slang Word");
