@@ -44,7 +44,12 @@ public class UpdateAndDeleteView extends JPanel {
 
         String[][] data = {{"", ""}};
         DefaultTableModel tableModel = new DefaultTableModel(data, columnNames);
-        JTable table = new JTable(tableModel) ;
+        JTable table = new JTable(tableModel) {
+            private static final long serialVersionUID = 1L;
+            public boolean isCellEditable(int row, int column) {
+                return false;
+            };
+        }; ;
 
 //        table.getSelectionModel().addListSelectionListener(sel);
 //        tableModel.removeRow(0);
