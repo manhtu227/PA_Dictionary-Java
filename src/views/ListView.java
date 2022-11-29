@@ -46,7 +46,7 @@ public class ListView extends JPanel {
         JPanel container = new JPanel();
         String[] columnNames = {"slang", "Meaning"};
 
-        String[][] data = {{"", ""}};
+        String[][] data = null;
         DefaultTableModel tableModel = new DefaultTableModel(data, columnNames);
         JTable table = new JTable(tableModel){
             private static final long serialVersionUID = 1L;
@@ -59,7 +59,6 @@ public class ListView extends JPanel {
             tableModel.insertRow(table.getRowCount(), data1);
         }
         totalList.setText("Total "+table.getRowCount()+" word");
-        System.out.println(table.getRowCount());
 //        table.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
         JScrollPane scrollPane = new JScrollPane(table);
         table.setFillsViewportHeight(true);

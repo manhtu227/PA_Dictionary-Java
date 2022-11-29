@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="051d9d18-5a60-41fb-9234-265f51950947" name="Changes" comment="Fix update and Delete">
-      <change afterPath="$PROJECT_DIR$/src/controller/GameListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/PlaygameView.java" afterDir="false" />
+    <list default="true" id="051d9d18-5a60-41fb-9234-265f51950947" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/history.txt" beforeDir="false" afterPath="$PROJECT_DIR$/history.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/slang.txt" beforeDir="false" afterPath="$PROJECT_DIR$/slang.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/MenuListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/MenuListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Data.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Jframe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Jframe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/ListView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/ListView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +40,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/PA_Dictionary&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/CNTT/3_HK1/java/PA_DICT_20127657&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
 }</component>
@@ -81,6 +83,11 @@
       <workItem from="1669304591087" duration="22134000" />
       <workItem from="1669450052472" duration="918000" />
       <workItem from="1669517814991" duration="780000" />
+      <workItem from="1669626579594" duration="467000" />
+      <workItem from="1669642365853" duration="31000" />
+      <workItem from="1669643319469" duration="969000" />
+      <workItem from="1669701777852" duration="86000" />
+      <workItem from="1669701971382" duration="413000" />
     </task>
     <task id="LOCAL-00001" summary="Design layout according to MVC pattern&#10;Done 2 function search on interface">
       <created>1668987528886</created>
@@ -147,51 +154,37 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/Main.java</url>
-          <line>9</line>
+          <line>7</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/views/Menu.java</url>
-          <line>93</line>
+          <line>98</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/controller/SearchListener.java</url>
-          <line>44</line>
+          <line>43</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/controller/SearchListener.java</url>
-          <line>55</line>
+          <line>53</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/controller/MenuListener.java</url>
-          <line>17</line>
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/controller/MenuListener.java</url>
-          <line>24</line>
+          <line>63</line>
           <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/views/Jframe.java</url>
-          <line>146</line>
+          <url>file://$PROJECT_DIR$/src/views/Menu.java</url>
+          <line>17</line>
           <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/views/Jframe.java</url>
-          <line>113</line>
-          <option name="timeStamp" value="36" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="9" />
-        </breakpoint>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
-          <option name="timeStamp" value="23" />
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>

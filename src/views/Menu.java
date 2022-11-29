@@ -14,9 +14,9 @@ public class Menu extends JPanel {
         center.setLayout(new FlowLayout());
         JPanel panel = new JPanel();
         BoxLayout boxlayout = new BoxLayout(panel, BoxLayout.Y_AXIS);
-        panel.setLayout(new GridLayout(10, 1));
+        panel.setLayout(new GridLayout(11, 1));
         // Tạo Border cho panel
-        panel.setBorder(new EmptyBorder(new Insets(0, 100, 0, 0)));
+        panel.setBorder(new EmptyBorder(new Insets(0, 200, 0, 0)));
 //        ActionListener ac = new MenuListener(this);
         // Tạo các Button
         JLabel name = new JLabel("MENU",JLabel.CENTER);
@@ -26,12 +26,14 @@ public class Menu extends JPanel {
         setColor(jb1);
         JButton jb2 = new JButton("Search Slang");
         setColor(jb2);
-        JButton jb3 = new JButton("Search Dectination");
+        JButton jb3 = new JButton("Search Definition");
         setColor(jb3);
         JButton jb4 = new JButton("Add Slang Word");
         setColor(jb4);
         JButton jb5 = new JButton("History");
         setColor(jb5);
+        JButton jb10 = new JButton("Reset");
+        setColor(jb10);
         JButton jb6 = new JButton("Update And Delete");
         setColor(jb6);
         JButton jb7 = new JButton("Random");
@@ -46,6 +48,7 @@ public class Menu extends JPanel {
         jb3.addActionListener(ac);
         jb4.addActionListener(ac);
         jb5.addActionListener(ac);
+        jb10.addActionListener(ac);
         jb6.addActionListener(ac);
         jb7.addActionListener(ac);
         jb8.addActionListener(ac);
@@ -62,6 +65,8 @@ public class Menu extends JPanel {
         panel.add(jb4);
         panel.add(Box.createRigidArea(new Dimension(0, 10)));
         panel.add(jb5);
+        panel.add(Box.createRigidArea(new Dimension(0, 10)));
+        panel.add(jb10);
         panel.add(Box.createRigidArea(new Dimension(0, 10)));
         panel.add(jb6);
         panel.add(Box.createRigidArea(new Dimension(0, 10)));

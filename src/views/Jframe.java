@@ -75,7 +75,7 @@ public class Jframe {
     }
 
     public void chuyenSearchSlang() {
-        String[][] data = {{"", ""}};
+        String[][] data = null;
         SearchSlangView search = new SearchSlangView(data, this, "Search Slang");
         search.setOpaque((true));
         frame.setTitle("Search Slang");
@@ -99,7 +99,7 @@ public class Jframe {
 
     public void chuyenSearchKey() {
         frame.setTitle("Search Definition");
-        String[][] data = {{"", ""}};
+        String[][] data = null;
         SearchSlangView search = new SearchSlangView(data, this, "Search Definition");
         search.setOpaque((true));
         frame.setContentPane(search);
@@ -147,6 +147,7 @@ public class Jframe {
         AddView mn = new AddView(this);
         mn.setOpaque((true));
         frame.setContentPane(mn);
+        frame.setLocationRelativeTo(null);
         frame.pack();
         frame.setVisible(true);
     }

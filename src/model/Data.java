@@ -17,12 +17,9 @@ public class Data {
             fr = new FileReader(path);
             Br = new BufferedReader(fr);
             String line = Br.readLine();
-            long x = 0;
             while (line != null) {
-                x++;
                 if (line.contains("`")) {
                     value.removeAll(value);
-                    System.out.println(file.getDistionary().get(distionary[0]));
                     distionary = line.split("`");
                     if (distionary.length != 0) {
                         String[] name = distionary[1].split("\\| ");
@@ -31,8 +28,6 @@ public class Data {
                         }
                         List<String> List = new ArrayList<String>(value);
                         file.getDistionary().put(distionary[0], List);
-                    } else {
-                        System.out.println("hello");
                     }
                 } else {
                     value.add((line));
@@ -41,14 +36,10 @@ public class Data {
                 }
                 line = Br.readLine();
 
-                System.out.println(x);
-
             }
             Br.close();
             fr.close();
-            System.out.println("----importData successfully----");
         } catch (Exception e) {
-            System.out.println("hellp");
             e.printStackTrace();
         }
     }
@@ -62,7 +53,6 @@ public class Data {
             bw.write(key+"`"+value);
             bw.close();
             fw.close();
-            System.out.println("----exportData successfully----");
         } catch (Exception e) {
             e.printStackTrace();
         }

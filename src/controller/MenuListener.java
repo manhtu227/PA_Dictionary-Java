@@ -1,5 +1,6 @@
 package controller;
 
+import model.Data;
 import views.Jframe;
 
 import javax.swing.*;
@@ -33,7 +34,6 @@ public class MenuListener implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        System.out.println(e.getActionCommand());
         if (e.getActionCommand().toString().compareTo("Update") == 0) {
             mn.getSl().editSlang(Slang.getText(), Meaning.getText());
             JFrame jf = new JFrame();
@@ -64,7 +64,7 @@ public class MenuListener implements ActionListener {
         if (e.getActionCommand().toString().compareTo("Search Slang") == 0) {
             this.mn.chuyenSearchSlang();
         }
-        if (e.getActionCommand().toString().compareTo("Search Dectination") == 0) {
+        if (e.getActionCommand().toString().compareTo("Search Definition") == 0) {
             this.mn.chuyenSearchKey();
         }
         if (e.getActionCommand().toString().compareTo("Add Slang Word") == 0) {
@@ -75,6 +75,16 @@ public class MenuListener implements ActionListener {
         }
         if (e.getActionCommand().toString().compareTo("History") == 0) {
             this.mn.chuyenHistory();
+        }
+        if (e.getActionCommand().toString().compareTo("Reset") == 0) {
+            Data file = new Data();
+            this.mn.getSl().getDistionary().clear();;
+            file.readFile("Slang.txt",this.mn.getSl());
+            JFrame jf = new JFrame();
+            JOptionPane.showMessageDialog(jf,
+                    "Duplicate success",
+                    "Reset Success",
+                    JOptionPane.INFORMATION_MESSAGE);
         }
         if (e.getActionCommand().toString().compareTo("Random") == 0) {
             this.mn.chuyenRandom();
@@ -95,7 +105,6 @@ public class MenuListener implements ActionListener {
             this.mn.chuyenUpdateAndDelete();
         }
         if (e.getActionCommand().toString().compareTo("Duplicate") == 0) {
-            System.out.println((key));
             this.mn.getSl().getDistionary().get(key).add(String.join(", ", values));
             JFrame jf = new JFrame();
             JOptionPane.showMessageDialog(jf,
